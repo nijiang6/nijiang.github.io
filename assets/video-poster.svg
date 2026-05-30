@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Showreel poster placeholder</title>
+  <desc id="desc">Video poster placeholder with play icon.</desc>
+  <rect width="1280" height="720" fill="#252016" />
+  <path d="M0 520 230 310l160 150 180-250 260 260 170-175 280 220v205H0Z" fill="#cbb783" stroke="#fff6dd" stroke-width="18" />
+  <circle cx="640" cy="350" r="116" fill="#b56d46" stroke="#fff6dd" stroke-width="16" />
+  <path d="M612 292v116l96-58Z" fill="#fff6dd" stroke="#252016" stroke-width="10" stroke-linejoin="round" />
+  <text x="70" y="105" fill="#fff6dd" font-family="Arial, sans-serif" font-size="58" font-weight="900">SHOWREEL VIDEO</text>
+</svg>

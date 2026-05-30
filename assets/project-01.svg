@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Project placeholder one</title>
+  <desc id="desc">Stylized character outline project placeholder.</desc>
+  <rect width="900" height="620" fill="#cbb783" />
+  <path d="M65 492 250 285l120 120 130-170 335 265v120H65Z" fill="#5d6642" stroke="#252016" stroke-width="14" />
+  <circle cx="690" cy="128" r="58" fill="#b56d46" stroke="#252016" stroke-width="12" />
+  <path d="M360 188h190l70 320H292Z" fill="#fff6dd" stroke="#252016" stroke-width="14" />
+  <path d="M405 164c18-54 52-80 98-80s80 26 98 80c-28 35-58 52-98 52s-70-17-98-52Z" fill="#8d8d5d" stroke="#252016" stroke-width="12" />
+  <text x="42" y="76" fill="#252016" font-family="Arial, sans-serif" font-size="42" font-weight="900">PROJECT 01</text>
+</svg>
