@@ -294,6 +294,10 @@ h3 {
   font-size: clamp(1rem, 1.6vw, 1.22rem);
 }
 
+.lead-line {
+  display: block;
+}
+
 .hl,
 .key {
   color: var(--cream);
@@ -929,6 +933,7 @@ time {
   .hero-inner,
   .hero-lead {
     max-width: calc(100vw - 32px);
+    width: 100%;
   }
 
   h1 {

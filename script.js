@@ -16,6 +16,21 @@ if (navToggle && siteNav) {
   });
 }
 
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    if (siteNav) {
+      siteNav.classList.remove("is-open");
+    }
+
+    if (navToggle) {
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+
 document.querySelectorAll(".media-carousel").forEach((carousel) => {
   const image = carousel.querySelector("img");
   const previous = carousel.querySelector(".carousel-prev");
