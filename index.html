@@ -1,219 +1,243 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="游戏开发 / 技术美术方向求职个人作品集，展示项目、画面风格化、工具链、代码与视频。"
-    />
-    <title>游戏开发 / 技术美术作品集</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=ZCOOL+XiaoWei&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="返回顶部">
-        <span class="brand-mark">TA</span>
-        <span>
-          <strong>潘海鹏</strong>
-          <small>Game Dev / Tech Artist</small>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        菜单
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="主导航">
-        <a href="#works">作品</a>
-        <a href="#showreel">视频</a>
-        <a href="#pipeline">管线</a>
-        <a href="#code">代码</a>
-        <a href="#contact">联系</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero section-pad">
-        <div class="hero-copy">
-          <p class="eyebrow">求职方向：游戏开发 / 技术美术</p>
-          <h1>把工程能力、画面表达和工具效率放到同一个作品集里。</h1>
-          <p class="hero-lead">
-            我关注风格化画面、粗描边表现、角色与场景渲染管线，以及让美术资产更稳定落地的编辑器工具。
-            这里可以替换为你的个人简介、实习经历、核心项目和求职亮点。
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#works">查看作品</a>
-            <a class="button button-ghost" href="assets/resume.pdf" target="_blank" rel="noreferrer">
-              下载简历
-            </a>
-          </div>
-          <ul class="quick-facts" aria-label="个人亮点">
-            <li><strong>UE / Unity</strong><span>渲染、工具、玩法</span></li>
-            <li><strong>C++ / C#</strong><span>工程实现与性能意识</span></li>
-            <li><strong>TA Pipeline</strong><span>Shader、材质、资产规范</span></li>
-          </ul>
-        </div>
-        <div class="hero-card" aria-label="主视觉占位">
-          <div class="rough-frame">
-            <img src="assets/hero-placeholder.svg" alt="替换为你的风格化作品主图" />
-            <div class="placeholder-note">
-              <span>替换图片</span>
-              <small>assets/hero-placeholder.svg</small>
-            </div>
-          </div>
-          <div class="caption-card">
-            <b>Stylized Visual Direction</b>
-            <span>khaki palette / bold outline / readable art</span>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="潘海鹏的个人作品集，展示 UE/C++ 独立游戏《奇怪的梦》、客户端工程实习经历、性能优化、并发调度与跨端架构能力。" />
+  <title>潘海鹏 | UE / C++ 游戏客户端作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Rajdhani:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <section class="section-pad intro-grid" aria-label="能力概览">
-        <article class="panel">
-          <span class="panel-number">01</span>
-          <h2>画面风格化</h2>
-          <p>卡通光照、Rim Light、法线外扩描边、屏幕后处理描边、手绘感材质与色彩分层。</p>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">PH</span>
+      <span>
+        <strong>潘海鹏</strong>
+        <small>UE / C++ Game Client</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      菜单
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <a href="#works">项目</a>
+      <a href="#experience">经历</a>
+      <a href="#skills">技能</a>
+      <a href="#education">教育</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-bg" src="assets/project-01-01.jpg" alt="独立游戏《奇怪的梦》场景截图" />
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">UE C++ · Gameplay · Client Systems</p>
+        <h1 id="hero-title">潘海鹏</h1>
+        <p class="hero-title-sub">UE / C++ 游戏客户端开发</p>
+        <p class="hero-lead">
+          <span class="hl">独立上线 Steam 游戏《奇怪的梦》</span>，具备从玩法、工具、性能到上线验证的完整项目闭环。
+          有<span class="hl hl-cyan">字节跳动剪映 C++ 客户端</span>与<span class="hl hl-cyan">阿里《三国志战略版》游戏客户端</span>实习经历，关注 Gameplay 架构、性能调优、并发安全与跨端工程。
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#works">查看作品</a>
+          <a class="button button-ghost" href="#experience">查看经历</a>
+        </div>
+        <dl class="hero-stats" aria-label="核心亮点">
+          <div>
+            <dt>5k+</dt>
+            <dd>Steam 愿望单</dd>
+          </div>
+          <div>
+            <dt>2k+</dt>
+            <dd>独游销量</dd>
+          </div>
+          <div>
+            <dt>80%+</dt>
+            <dd>复杂关卡帧率提升</dd>
+          </div>
+          <div>
+            <dt>2027</dt>
+            <dd>计算机本科毕业</dd>
+          </div>
+        </dl>
+      </div>
+      <a class="scroll-cue" href="#works" aria-label="滚动到项目">↓</a>
+    </section>
+
+    <section class="section-pad statement reveal" aria-label="个人定位">
+      <div class="statement-copy">
+        <p class="eyebrow">Profile</p>
+          <h2>能把<span class="hl">游戏内容、底层机制和工程效率</span>放在同一张图里思考。</h2>
+      </div>
+      <div class="statement-grid">
+        <article>
+          <span>01</span>
+          <h3>商业项目闭环</h3>
+          <p>从玩法、编辑器、性能优化到 Steam 上线，独立游戏经历覆盖真实产品的完整生命周期。</p>
         </article>
-        <article class="panel">
-          <span class="panel-number">02</span>
-          <h2>技术美术工具</h2>
-          <p>批处理导入、材质检查、贴图规范、自动化生成、编辑器扩展和跨岗位沟通文档。</p>
+        <article>
+          <span>02</span>
+          <h3>客户端工程能力</h3>
+          <p>在剪映与 SLG 项目中实践并发调度、事件流治理、UI 组件化、状态机和跨端接口解耦。</p>
         </article>
-        <article class="panel">
-          <span class="panel-number">03</span>
-          <h2>游戏开发能力</h2>
-          <p>玩法系统、资源加载、性能分析、调试复现、多人同步或移动端适配等工程实践。</p>
+        <article>
+          <span>03</span>
+          <h3>性能与稳定性意识</h3>
+          <p>熟练使用 Insights、Profiler 和防御性编程手段定位瓶颈，落地对象池、实例化渲染、GC 优化。</p>
         </article>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-pad" id="works">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Works</p>
-          <h2>项目作品</h2>
-          <p>每张卡片都可以替换成你的项目截图、项目简介、职责、技术点和链接。</p>
-        </div>
-        <div class="work-grid">
-          <article class="work-card">
-            <img src="assets/project-01.svg" alt="项目一截图占位" />
-            <div class="work-body">
-              <p class="tag">UE / Stylized Rendering</p>
-              <h3>风格化角色描边 Demo</h3>
-              <p>
-                实现可调节粗描边、色阶阴影和边缘高光，支持角色、武器和场景物件统一风格。
-              </p>
-              <a href="#" aria-label="查看风格化角色描边 Demo 详情">查看详情</a>
+    <section class="section-pad reveal" id="works">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>项目作品</h2>
+        <p>从零开发并上线的 UE 独立游戏项目，覆盖 Gameplay、UGC 编辑器、联机同步、性能优化与商业化验证。</p>
+      </div>
+
+      <div class="work-list">
+        <article class="project-card feature-card">
+          <div class="media-carousel"
+            data-images="assets/project-01-01.jpg,assets/project-01-02.jpg,assets/project-01-03.jpg,assets/project-01-04.jpg,assets/project-01-05.png">
+            <img src="assets/project-01-01.jpg" alt="《奇怪的梦》项目截图" />
+            <div class="carousel-controls" aria-label="图片切换">
+              <button type="button" class="carousel-prev" aria-label="上一张">‹</button>
+              <span class="carousel-count">1 / 5</span>
+              <button type="button" class="carousel-next" aria-label="下一张">›</button>
             </div>
-          </article>
-          <article class="work-card">
-            <img src="assets/project-02.svg" alt="项目二截图占位" />
-            <div class="work-body">
-              <p class="tag">TA Tool / Pipeline</p>
-              <h3>美术资源检查工具</h3>
-              <p>
-                面向美术同学的资源规范检查，覆盖命名、贴图尺寸、材质参数和提交前风险提示。
-              </p>
-              <a href="#" aria-label="查看美术资源检查工具详情">查看详情</a>
-            </div>
-          </article>
-          <article class="work-card">
-            <img src="assets/project-03.svg" alt="项目三截图占位" />
-            <div class="work-body">
-              <p class="tag">Game System / C++</p>
-              <h3>游戏玩法系统项目</h3>
-              <p>
-                展示你的玩法系统、同步机制、交互逻辑、性能优化或线上问题排查经验。
-              </p>
-              <a href="#" aria-label="查看游戏玩法系统项目详情">查看详情</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-pad split-section" id="showreel">
-        <div>
-          <p class="eyebrow">Showreel</p>
-          <h2>视频展示区</h2>
-          <p>
-            把 `assets/showreel.mp4` 替换成你的项目演示视频，也可以把 `poster` 替换为视频封面。
-            建议控制在 30 到 90 秒，先展示最终效果，再补充技术拆解。
-          </p>
-        </div>
-        <div class="video-frame">
-          <video controls poster="assets/video-poster.svg">
-            <source src="assets/showreel.mp4" type="video/mp4" />
-            当前浏览器不支持视频播放，请改为放置 B 站、YouTube 或网盘链接。
-          </video>
-        </div>
-      </section>
-
-      <section class="section-pad pipeline" id="pipeline">
-        <div class="section-heading">
-          <p class="eyebrow">Workflow</p>
-          <h2>技术拆解与管线</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <span>Step 01</span>
-            <h3>视觉目标</h3>
-            <p>收集参考，确定色彩、轮廓粗细、明暗层级和材质关键词，保证风格统一。</p>
-          </article>
-          <article>
-            <span>Step 02</span>
-            <h3>Shader / 材质</h3>
-            <p>拆分光照、阴影、描边、Rim、高光与后处理，暴露美术可控参数。</p>
-          </article>
-          <article>
-            <span>Step 03</span>
-            <h3>工具化落地</h3>
-            <p>把重复操作沉淀为检查器、批处理工具或文档模板，降低团队使用成本。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-pad code-section" id="code">
-        <div>
-          <p class="eyebrow">Code Sample</p>
-          <h2>代码块展示</h2>
-          <p>
-            这里可以放 C++、HLSL、C#、Python 工具脚本等片段。建议只展示最能说明你能力的一小段，
-            并配合旁边文字说明上下文。
-          </p>
-        </div>
-        <pre><code>// 示例：风格化描边参数伪代码，可替换为你的真实代码
-float outlineWidth = saturate(_OutlineWidth * viewDistanceFactor);
-float3 outlineColor = lerp(_ShadowColor, _InkColor, edgeMask);
-
-if (normalFacing < _EdgeThreshold)
-{
-    finalColor = outlineColor;
-}</code></pre>
-      </section>
-
-      <section class="section-pad contact" id="contact">
-        <div class="contact-card">
-          <p class="eyebrow">Contact</p>
-          <h2>期待参与更有风格、更好玩的项目。</h2>h
-          <p>邮箱：3531341457@qq.com · 微信：grassdw · GitHub：github.com/nijiang6</p>
-          <div class="contact-links">
-            <a class="button button-primary" href="mailto:3531341457@qq.com">发送邮件</a>
-            <a class="button button-ghost" href="https://github.com/nijiang6" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
           </div>
+          <div class="project-body">
+            <p class="tag">UE / C++ · Steam · 独立游戏</p>
+            <h3>《奇怪的梦》</h3>
+            <p class="project-meta">2024.12 - 2025.10 · UE / C++ 开发工程师</p>
+            <p>
+              独立使用 UE 开发并上线 Steam，获得 <span class="hl">5k+ 愿望单</span>，至今销量 <span class="hl">2k+ 份</span>。项目覆盖 Gameplay 架构、UGC 关卡编辑器、
+              数据压缩、联机同步、对象池、实例化渲染和线上性能调优等完整工程模块。
+            </p>
+            <ul class="impact-list">
+                <li>采用<span class="hl">组件化设计</span>拆分 UI 与核心逻辑，实现蓝图与底层数据的深度解耦。</li>
+                <li>为 UGC 关卡编辑器设计 <span class="hl hl-cyan">C++ 自定义紧凑结构体</span>，降低海量对象的数据与运行时开销。</li>
+                <li>使用<span class="hl">整型定点数</span>替代浮点数处理空间变换，解决 Float 精度丢失导致的判定 Bug。</li>
+                <li>基于<span class="hl hl-cyan">对象池和实例化渲染</span>减少 Draw Call，将千级 Actor 复杂关卡帧率提升 <span class="hl">80%+</span>。</li>
+                <li>处理 <span class="hl hl-cyan">RPC 机制与状态同步</span>，实现稳定的 P2P 多人联机架构。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad experience reveal" id="experience">
+      <div class="section-heading compact">
+        <p class="eyebrow">Experience</p>
+        <h2>工作经历</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <time>2026.05 - 至今</time>
+          <div>
+            <h3>阿里巴巴 · 一点灵犀信息技术（广州）有限公司</h3>
+            <p class="project-meta">游戏客户端开发实习生 · 《三国志战略版》 · 广州</p>
+            <ul class="impact-list">
+                <li>基于<span class="hl">六边形网格坐标系</span>构建寻路模块，引入 A* 并针对锯齿路径进行平滑优化。</li>
+                <li>结合 <span class="hl hl-cyan">JPS</span> 优化大地图长距离寻路性能，降低内存占用与 CPU 寻路耗时。</li>
+                <li>基于 <span class="hl">ECS 思想</span>配合事件总线系统剥离数据与表现，实现业务模块解耦。</li>
+                <li>使用 Profiler 定位并修复严重 <span class="hl hl-cyan">GC 问题</span>，利用对象池削减高频实体动态创建/销毁开销。</li>
+                <li>主导核心 UI 模块<span class="hl">组件化重构</span>，削减冗余代码，提升逻辑复用率并统一视觉与交互规范。</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <time>2025.11 - 2026.04</time>
+          <div>
+            <h3>字节跳动 · 广东今日头条网络技术有限公司</h3>
+            <p class="project-meta">C++ 客户端开发实习生 · 剪映 CapCut · 广州</p>
+            <ul class="impact-list">
+                <li>参与底层 Observable 事件驱动模块维护，基于 <span class="hl">SharedMutex</span> 完善并发保护，通过宿主销毁自动解绑规避悬垂指针崩溃。</li>
+                <li>协助封装 <span class="hl hl-cyan">TaskRunner 与 Future&lt;T&gt;</span> 异步组件，并在 Debug 模式下引入主线程阻塞强制校验。</li>
+                <li>维护 Android 至 C++ 的 <span class="hl">Builder 模式能力注入链路</span>，实现跨端接口解耦。</li>
+                <li>封装 BASSERT 宏统一异常拦截与埋点，落地 <span class="hl hl-cyan">ConcurrentHashMap + AtomicInteger</span> 限频日志抽样机制。</li>
+                <li>应用 Kotlin 协程 Redux 状态机，利用 <span class="hl">StateFlow 与 CAS 自旋</span>重构状态更新，解决高频交互下并发丢状态问题。</li>
+                <li>参与 LayerManager 图层镜像中枢迭代，封装宽容度自适应 <span class="hl hl-cyan">Gson 组件</span>并拦截不安全泛型调用。</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad skills reveal" id="skills">
+      <div class="section-heading compact">
+        <p class="eyebrow">Skills</p>
+        <h2>专业技能</h2>
+      </div>
+      <div class="skill-grid">
+        <article>
+          <h3>编程语言</h3>
+              <p><span class="hl">C++17</span>、Lua、C#、Kotlin；熟悉 OOP、STL、基础数据结构与常用算法。</p>
+        </article>
+        <article>
+          <h3>游戏引擎</h3>
+              <p><span class="hl">UE C++ 与蓝图混合开发</span>、Gameplay 框架、状态同步、UMG、反射机制；熟悉 Unity、XLua 与 C# 混合开发。</p>
+        </article>
+        <article>
+          <h3>核心技术</h3>
+              <p><span class="hl hl-cyan">多线程并发安全</span>、Profiler / Unreal Insights 性能分析、Draw Call 优化、GC 优化、网络同步、对象池。</p>
+        </article>
+        <article>
+          <h3>工程基础</h3>
+          <p>计算机网络、操作系统、图形学与渲染管线基础；熟练使用 Git 协作。</p>
+        </article>
+        <article>
+          <h3>AI 协作</h3>
+              <p>深度使用 Codex、Cursor 等编程工具，能判断 <span class="hl">AI 协作边界</span>，并在独游和实习项目中提升长期效率。</p>
+        </article>
+        <article>
+          <h3>AIGC 项目</h3>
+          <p>实验室中主导从 0 搭建 AIGC 企业应用项目，担任组长，负责方案推进与工程落地。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad education reveal" id="education">
+      <div>
+        <p class="eyebrow">Education</p>
+        <h2>华南农业大学</h2>
+        <h3>双一流</h3>
+        <p class="project-meta">计算机科学与技术 本科 · 软件学院 · 2023.09 - 2027.06 · 广州</p>
+      </div>
+      <div class="edu-panel">
+        <p>主修课程：数据结构与算法、计算机网络、操作系统、计算机组成原理。</p>
+        <p>荣誉与实践：蓝桥杯国赛优秀奖、英语六级、大学生创新创业大赛经历、自媒体全网累计 7k+ 粉丝。</p>
+      </div>
+    </section>
+
+    <section class="section-pad contact reveal" id="contact">
+      <div class="contact-band">
+        <p class="eyebrow">Contact</p>
+        <h2>期待参与更有挑战的游戏客户端与引擎相关项目。</h2>
+        <p>邮箱：3531341457@qq.com · 微信：grassdw · GitHub：github.com/nijiang6</p>
+        <div class="contact-links">
+          <a class="button button-primary" href="mailto:3531341457@qq.com">发送邮件</a>
+          <a class="button button-ghost" href="https://github.com/nijiang6" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> 你的名字. Built for GitHub Pages.</p>
-      <a href="#top">回到顶部</a>
-    </footer>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 潘海鹏. Built for GitHub Pages.</p>
+    <a href="#top">回到顶部</a>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
