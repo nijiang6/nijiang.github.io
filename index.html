@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="潘海鹏的个人作品集，展示 UE/C++ 独立游戏《奇怪的梦》作品、游戏客户端实习经历。"
+      content="潘海鹏的个人作品集，展示游戏客户端实习经历、UE/C++ 独立游戏《奇怪的梦》项目经历、性能优化、网络同步与工程能力。"
     />
     <title>潘海鹏 | UE / C++ 游戏客户端作品集</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,8 +29,8 @@
         菜单
       </button>
       <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="#experience">实习</a>
         <a href="#works">项目</a>
-        <a href="#experience">经历</a>
         <a href="#skills">技能</a>
         <a href="#education">教育</a>
         <a href="#contact">联系</a>
@@ -46,58 +46,43 @@
           <h1 id="hero-title">潘海鹏</h1>
           <p class="hero-title-sub">UE / C++ 游戏客户端开发</p>
           <p class="hero-lead">
-            <span class="lead-line"><span class="hl">独立上线 Steam 游戏《奇怪的梦》</span>。</span>
-            <span class="lead-line">有字节跳动剪映 C++ 客户端实习经历。</span>
-            <span class="lead-line">有阿里《三国志战略版》游戏客户端实习经历。</span>
-            <span class="lead-line">关注 Gameplay 架构、性能调优。</span>
-            <span class="lead-line">关注并发安全与网络同步。</span>
+            <span class="lead-line"><span class="hl">游戏客户端开发实习生</span>，关注性能调优、网络同步与工程化落地。</span>
+            <span class="lead-line">有《三国志战略版》、剪映 CapCut 与独立游戏《奇怪的梦》项目经历。</span>
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#works">查看作品</a>
-            <a class="button button-ghost" href="#experience">查看经历</a>
+            <a class="button button-primary" href="#experience">查看实习经历</a>
+            <a class="button button-ghost" href="#works">查看项目经历</a>
           </div>
-          <dl class="hero-stats" aria-label="核心亮点">
-            <div>
-              <dt>5k+</dt>
-              <dd>Steam 愿望单</dd>
-            </div>
-            <div>
-              <dt>2k+</dt>
-              <dd>独游销量</dd>
-            </div>
-            <div>
-              <dt>80%+</dt>
-              <dd>复杂关卡帧率提升</dd>
-            </div>
-            <div>
-              <dt>2027</dt>
-              <dd>计算机本科毕业</dd>
-            </div>
-          </dl>
         </div>
-        <a class="scroll-cue" href="#works" aria-label="滚动到项目">↓</a>
+        <a class="scroll-cue" href="#experience" aria-label="滚动到实习经历">↓</a>
       </section>
 
-      <section class="section-pad statement reveal" aria-label="个人定位">
-        <div class="statement-copy">
-          <p class="eyebrow">Profile</p>
-          <h2>能把<span class="hl">游戏内容、底层机制和工程效率</span>放在同一张图里思考。</h2>
+      <section class="section-pad experience reveal" id="experience">
+        <div class="section-heading compact">
+          <p class="eyebrow">Internship</p>
+          <h2>实习经历</h2>
         </div>
-        <div class="statement-grid">
+        <div class="timeline">
           <article>
-            <span>01</span>
-            <h3>商业项目闭环</h3>
-            <p>独立开发并上线 Steam 游戏，具备从玩法、编辑器、性能优化到商业验证的完整项目经历。</p>
+            <time>2026年05月 - 至今</time>
+            <div>
+              <h3>(阿里巴巴）一点灵犀信息技术(广州)有限公司</h3>
+              <p class="project-meta">游戏客户端开发实习生 · 《三国志战略版》 · 广州</p>
+              <p><span class="hl">实习训练：</span></p>
+              <p><span class="hl">六边形网格寻路算法落地：</span>基于六边形网格坐标系构建寻路模块。引入 A* 算法并针对锯齿路径进行平滑优化；结合 JPS 算法优化大地图长距离寻路性能，大地图寻路速度提升<span class="hl">20%+</span>。</p>
+              <p><span class="hl hl-cyan">性能调优：</span>独立制作游戏 Demo，配合事件总线系统，剥离数据与表现，实现业务模块的高度解耦。针对游戏运行时卡顿，使用 Profiler 精准定位并修复了 GC 问题；利用对象池机制大幅削减高频实体的动态创建/销毁开销。</p>
+              <p><span class="hl">UI 组件化：</span>实现 UI 模块的组件化，统一配置样式，大幅削减冗余代码，提升逻辑复用率并统一了视觉与交互规范。</p>
+            </div>
           </article>
           <article>
-            <span>02</span>
-            <h3>客户端工程能力</h3>
-            <p>在剪映与 SLG 项目中实践并发调度、事件流治理、UI 组件化、状态机和跨端接口解耦。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>性能与稳定性意识</h3>
-            <p>熟练使用 Insights、Profiler 和防御性编程手段定位瓶颈，落地对象池、实例化渲染、GC 优化。</p>
+            <time>2025年11月 - 2026年04月</time>
+            <div>
+              <h3>（字节跳动）广东今日头条网络技术有限公司</h3>
+              <p class="project-meta">C++ 客户端开发实习生 · 剪映 CapCut · 广州</p>
+              <p><span class="hl">C++ 并发调度与事件流治理：</span>参与底层 Observable 事件驱动模块维护，基于 SharedMutex 完善并发保护，通过宿主销毁自动解绑规避悬垂指针崩溃。协助封装 TaskRunner 与 Future&lt;T&gt; 异步组件，并利用宏引入 Debug 模式下的主线程阻塞强制校验，提升跨端渲染的线程安全性。</p>
+              <p><span class="hl hl-cyan">工程基建完善：</span>维护 Android 至 C++ 的 Builder 模式能力注入链路，实现跨端接口解耦。运用“断言即控制”思想封装 BASSERT 宏统一异常拦截与埋点；落地基于 ConcurrentHashMap + AtomicInteger 的限频日志抽样机制，降低高频回调下的性能损耗。</p>
+              <p><span class="hl">端侧渲染优化与防御性编程：</span>参与 LayerManager 图层镜像中枢迭代，熟悉渲染节点与业务逻辑解耦。在自定义 View 开发中落地“尺寸变化按需重算”策略减少过度绘制。针对弱类型下发导致的端侧崩溃，封装宽容度自适应的 Gson 组件并在编译期拦截不安全泛型调用。</p>
+            </div>
           </article>
         </div>
       </section>
@@ -126,41 +111,11 @@
               <p class="tag">UE / C++ · Steam · 独立游戏</p>
               <h3>独立游戏《奇怪的梦》</h3>
               <p class="project-meta">2024年12月 - 2025年10月 · UE / C++ 开发工程师</p>
-              <p><span class="hl">商业成绩与架构设计：</span>独立使用 UE 引擎开发并上线 Steam，获 <span class="hl">5k+ 愿望单</span>，至今销量 <span class="hl">2k+ 份</span>。深入理解 UE Gameplay 框架，采用组件化设计 UI 与核心逻辑，实现蓝图与底层数据的深度解耦。</p>
-              <p><span class="hl hl-cyan">内存优化与数据结构压缩：</span> 独立设计并实现 UGC 关卡编辑器。为解决海量对象导致的性能开销，设计 C++ 自定义紧凑结构体，采用特定数据压缩机制。利用整型定点数替代浮点数处理空间变换，彻底解决了由于 Float 精度丢失导致的判定 Bug 。</p>
+              <p><span class="hl">商业成绩与架构设计：</span>独立使用 UE 引擎开发并上线 Steam，获 <span class="hl">5k+ 愿望单</span>，至今销量 <span class="hl">2k+ 份</span>。</p>
+              <p><span class="hl hl-cyan">内存优化与数据结构压缩：</span> 独立设计并实现 UGC 关卡编辑器。为解决海量对象导致的性能开销，设计 C++ 自定义紧凑结构体，采用特定数据压缩机制。利用整型定点数替代浮点数处理空间变换，解决了由于 Float 精度丢失导致的判定 Bug 。</p>
               <p><span class="hl">引擎底层机制与内存管理：</span> 深入理解 UE Gameplay 框架，采用组件化思想解耦 UI 与核心逻辑。熟练运用 C++ 智能指针进行非 UObject 数据的生命周期与内存安全管理。</p>
-              <p><span class="hl hl-cyan">性能调优：</span> 熟练使用 Unreal Insights 定位性能瓶颈。针对海量实体设计并落地了基于 C++ 的对象池技术。结合实例化渲染技术，有效减少 Draw Call，将千级 Actor 复杂关卡的帧率提升 <span class="hl">80%+</span>，具备严谨的性能优化意识。</p>
-              <p><span class="hl">联机同步架构：</span> 精准处理 RPC 机制与状态同步，实现稳定的 P2P 多人联机架构。</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-pad experience reveal" id="experience">
-        <div class="section-heading compact">
-          <p class="eyebrow">Experience</p>
-          <h2>工作经历</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <time>2025年11月 - 2026年04月</time>
-            <div>
-              <h3>（字节跳动）广东今日头条网络技术有限公司</h3>
-              <p class="project-meta">C++ 客户端开发实习生 · 剪映 Capcut · 广州</p>
-              <p><span class="hl">C++ 并发调度与事件流治理：</span>参与底层 Observable 事件驱动模块维护，基于 SharedMutex 完善并发保护，通过宿主销毁自动解绑规避悬垂指针崩溃。协助封装 TaskRunner 与 Future&lt;T&gt; 异步组件，并利用宏引入 Debug 模式下的主线程阻塞强制校验，提升跨端渲染的线程安全性。</p>
-              <p><span class="hl hl-cyan">跨端架构重构与工程基建完善：</span>维护 Android 至 C++ 的 Builder 模式能力注入链路，实现跨端接口解耦。运用“断言即控制”思想封装 BASSERT 宏统一异常拦截与埋点；落地基于 ConcurrentHashMap+AtomicInteger 的限频日志抽样机制，有效降低高频回调下的性能损耗。</p>
-              <p><span class="hl">复杂状态机管理与协程并发实践：</span>在业务线深入应用基于 Kotlin 协程的轻量级 Redux 状态机。利用 StateFlow 与 CAS 自旋机制重构状态更新，解决高频交互下的并发丢状态问题；结合协程生命周期封装 waitConditionThenRun 按需执行机制，精简代码并天然防范内存泄漏。</p>
-              <p><span class="hl hl-cyan">端侧渲染优化与防御性编程：</span>参与 LayerManager 图层镜像中枢迭代，熟悉渲染节点与业务逻辑解耦。在自定义 View 开发中落地“尺寸变化按需重算”策略减少过度绘制。针对弱类型下发导致的端侧崩溃，封装宽容度自适应的 Gson 组件并在编译期拦截不安全泛型调用，大幅提升线上容错率。</p>
-            </div>
-          </article>
-          <article>
-            <time>2026年05月 - 至今</time>
-            <div>
-              <h3>(阿里巴巴）一点灵犀信息技术(广州)有限公司</h3>
-              <p class="project-meta">游戏客户端开发实习生 · 《三国志战略版》 · 广州</p>
-              <p><span class="hl">六边形网格寻路算法落地：</span>基于六边形网格坐标系构建寻路模块。引入 A* 算法并针对锯齿路径进行平滑优化；结合 JPS 算法优化大地图长距离寻路性能，显著降低内存占用与 CPU 寻路耗时。</p>
-              <p><span class="hl hl-cyan">性能调优：</span>基于 ECS 思想配合事件总线系统，剥离数据与表现，实现业务模块的高度解耦。针对游戏运行时卡顿，使用 Profiler 精准定位并修复了严重 GC 问题；利用对象池机制大幅削减高频实体的动态创建/销毁开销。</p>
-              <p><span class="hl">UI 组件化重构：</span>主导核心 UI 模块的组件化重构，大幅削减冗余代码，提升逻辑复用率并统一了视觉与交互规范。</p>
+              <p><span class="hl hl-cyan">性能调优：</span> 熟练使用 Unreal Insights 定位性能瓶颈。针对海量实体设计并落地了基于 C++ 的对象池技术。结合实例化渲染技术，有效减少 Draw Call，将千级 Actor 复杂关卡的帧率提升 <span class="hl">80%+</span> 。</p>
+              <p><span class="hl">多人联机与状态同步：</span>实现房间创建、搜索、加入及关卡切换流程；结合 Actor Replication、RepNotify 和 RPC 机制同步玩家状态与游戏事件，处理网络权限、Actor 所有权及服务端生成等联机问题，完成可实际游玩的多人联机功能。</p>
             </div>
           </article>
         </div>
@@ -186,11 +141,7 @@
           </article>
           <article>
             <h3>工程与基础</h3>
-            <p><span class="hl hl-cyan">工程与基础：</span>熟悉计算机网络、操作系统基础知识；了解图形学与渲染管线基础；熟练使用 Git 等团队协作工具。</p>
-          </article>
-          <article>
-            <h3>AI技能</h3>
-            <p><span class="hl">AI技能：</span>深度运用例如 Codex、Cursor 的编程工具，清晰 AI 协作的边界，并在独游和实习项目各个环节中大幅提升长期效率。</p>
+            <p><span class="hl hl-cyan">工程与基础：</span>掌握计算机基础知识；熟悉图形学与渲染管线基础；熟练使用 Git 等团队协作工具。</p>
           </article>
         </div>
       </section>
@@ -200,7 +151,7 @@
           <p class="eyebrow">Education</p>
           <h2>华南农业大学</h2>
           <h3>双一流</h3>
-          <p class="project-meta">计算机科学与技术 本科 · 软件学院 · 2023年09月 - 2027年06月 · 广州</p>
+          <p class="project-meta">计算机科学与技术 本科 · 2023年09月 - 2027年06月 · 广州</p>
         </div>
         <div class="edu-panel">
           <p>主修课程：数据结构与算法、计算机网络、操作系统、计算机组成原理。</p>
